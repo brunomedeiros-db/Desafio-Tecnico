@@ -17,7 +17,7 @@ Automação de 2 cenários Web (TodoMVC) e 2 cenários de API (GitHub REST) com 
 ## Instalação
 
 ```bash
-git clone (https://github.com/brunomedeiros-db/Desafio-Tecnico.git)
+git clone https://github.com/brunomedeiros-db/Desafio-Tecnico.git
 cd desafio-playwright-web-api
 npm ci
 npx playwright install chromium
