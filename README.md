@@ -17,13 +17,17 @@ Automação de 2 cenários Web (TodoMVC) e 2 cenários de API (GitHub REST) com 
 ## Instalação
 
 No PowerShell:
+
 ```bash
 git clone https://github.com/brunomedeiros-db/Desafio-Tecnico.git
 cd Desafio-Tecnico
 npm ci
 ```
+
 Se o PowerShell bloquear o `npm`, rode
+
 > `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` e confirme com `S`.
+
 ```bash
 npx playwright install chromium
 ```
