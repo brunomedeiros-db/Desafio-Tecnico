@@ -1,6 +1,6 @@
 # Desafio Técnico QA — Automação Web + API com Playwright
 
-Automação de 2 cenários Web (TodoMVC) e 2 cenários de API (GitHub REST) com **Playwright Test + TypeScript**.
+Automação de 2 cenários Web (TodoMVC) e 2 cenários de API (GitHub REST) com Playwright Test + TypeScript.
 
 | ID  | Tipo | Cenário                                                       | Arquivo                                 |
 | --- | ---- | ------------------------------------------------------------- | --------------------------------------- |
@@ -11,20 +11,17 @@ Automação de 2 cenários Web (TodoMVC) e 2 cenários de API (GitHub REST) com 
 
 ## Pré-requisitos
 
-- Node.js 18 ou superior (validado em Node 20, 22 e 24)
+- Node.js 18 ou superior
 - Git
 
 ## Instalação
 
 ```bash
-git clone <url-do-repositorio>
+git clone (https://github.com/brunomedeiros-db/Desafio-Tecnico.git)
 cd desafio-playwright-web-api
 npm ci
 npx playwright install chromium
 ```
-
-> **Linux:** pode ser necessário instalar também as dependências de sistema do navegador, com
-> `npx playwright install --with-deps chromium` (requer sudo).
 
 ## Executando
 
@@ -104,9 +101,3 @@ Saída esperada de `npm test`:
 | Teste de API falha com mensagem de rate limit                                            | Limite de 60 requisições/hora por IP sem autenticação. Aguarde alguns minutos ou defina `GITHUB_TOKEN`.                            |
 | `Executable doesn't exist at ...chromium`                                                | Faltou `npx playwright install chromium`.                                                                                          |
 | Teste web falha por timeout ao abrir a página                                            | Rede ou proxy bloqueando `demo.playwright.dev`.                                                                                    |
-
-## Possíveis evoluções
-
-- Validação de schema completo da resposta da API (ex.: `zod` ou `ajv`).
-- Rodar os cenários web também em Firefox e WebKit (basta adicionar projetos na configuração).
-- Cenários web adicionais: edição por duplo clique, remoção e persistência após reload.
