@@ -1,0 +1,31 @@
+{
+  "name": "desafio-playwright-web-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Desafio técnico QA: automação Web (TodoMVC) e API (GitHub REST) com Playwright + TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:web": "playwright test --project=web",
+    "test:api": "playwright test --project=api",
+    "test:headed": "playwright test --project=web --headed",
+    "test:debug": "playwright test --project=web --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0",
+    "@types/node": "22.20.3",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "9.1.2",
+    "eslint-plugin-playwright": "2.12.0",
+    "prettier": "3.9.8",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0"
+  }
+}
